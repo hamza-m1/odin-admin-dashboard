@@ -76,7 +76,7 @@ header{
 
 .search-bar {
     display: grid;
-    grid-template-columns: 70px 1fr 50px 50px 150px;
+    grid-template-columns: 70px minmax(200px, 1fr) 40px 50px 150px;
     gap: 30px;
     align-items: center;
     justify-items: center;
@@ -90,9 +90,10 @@ header{
 .search-bar input {
     height: 40px;
     border-radius: 20px;
-    justify-self: stretch;
+    justify-self: start;
     padding: 10px 20px;
     background-color: rgb(235, 235, 235);
+    width: min(100%, 600px);
 }
 
 .search-bar .user-name {
@@ -103,7 +104,7 @@ header{
     height: 30px;
 }
 
-header .profile-img {
+.search-bar .profile-img {
     height: 50px;
     border-radius: 50%;
 }
