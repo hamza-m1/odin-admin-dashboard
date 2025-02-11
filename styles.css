@@ -15,9 +15,25 @@ body {
 
 nav {
     background-color: bisque;
-
     grid-row: 1 / span 2;
+
+    display: grid;
+    grid-template-rows: 75px 1fr 1fr;
 }
+
+.title {
+    background-color: brown;
+}
+
+.page-nav {
+    background-color: blueviolet;
+}
+
+.support-nav{
+    background-color: blue;
+}
+
+
 
 header{
     background-color: beige;
