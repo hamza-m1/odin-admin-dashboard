@@ -69,15 +69,46 @@ nav {
 
 
 header{
-    background-color: beige;
+    background-color: white;
     display: grid;
     grid-template-rows: 75px 1fr;
 }
 
-.search-bar {}
+.search-bar {
+    display: grid;
+    grid-template-columns: 70px 1fr 50px 50px 150px;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid;
+}
+
+.search-bar .search-img {
+    justify-self: end;
+}
+
+.search-bar input {
+    height: 40px;
+    border-radius: 20px;
+    justify-self: stretch;
+    padding: 10px 20px;
+    background-color: rgb(235, 235, 235);
+}
+
+.search-bar .user-name {
+    justify-self: start;
+}
+
+.search-img, .notification-img {
+    height: 30px;
+}
+
+header .profile-img {
+    height: 50px;
+    border-radius: 50%;
+}
 
 .profile-bar {}
-
 
 
 
