@@ -10,7 +10,7 @@ body {
 
     display: grid;
     grid-template-rows: 200px 1fr;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 275px 1fr;
 }
 
 nav {
@@ -23,6 +23,12 @@ nav {
 
 .title {
     /* background-color: brown; */
+}
+
+.title-logo {
+    height: 60px;
+    align-self: center;
+    justify-self: center;
 }
 
 .title-text {
@@ -46,8 +52,13 @@ nav {
 
 .nav-item, .title {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 75px 1fr;
     align-items: center;
+}
+
+.nav-logo {
+    height: 30px;
+    justify-self: center;
 }
 
 .nav-text {
@@ -59,7 +70,16 @@ nav {
 
 header{
     background-color: beige;
+    display: grid;
+    grid-template-rows: 75px 1fr;
 }
+
+.search-bar {}
+
+.profile-bar {}
+
+
+
 
 main{
     background-color: azure;
