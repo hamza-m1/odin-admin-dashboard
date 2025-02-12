@@ -4,7 +4,7 @@ Admin Dashboard created as part of "The Odin Project" curriculum.
 
 Created using HTML and CSS, focusing on CSS Grid.
 
-Live preview:
+Live preview: https://hamza-m1.github.io/odin-admin-dashboard/
 
 Shout out to the following for allowing me to use their photos:
 
