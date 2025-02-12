@@ -1,8 +1,8 @@
 :root {
-    --my-blue: #2da2fc;
-    --my-grey: rgb(232, 232, 232);
-    --my-text-grey: rgb(120, 120, 120);
-    --my-yellow: rgb(255, 204, 0)
+    --primary: rgb(14, 129, 68);
+    --secondary: rgb(21, 185, 98);
+    --grey: rgb(232, 232, 232);
+    --text-grey: rgb(120, 120, 120);
 }
 
 @font-face {
@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-    background-color: var(--my-blue);
+    background-color: var(--primary);
     grid-row: 1 / span 2;
 
     display: grid;
@@ -56,7 +56,7 @@ nav {
 }
 
 .support-nav{
-    /* background-color: blue; */
+    /* background-co--secondary; */
     display: grid;
     grid-template-rows: repeat(3, 50px);
     grid-row: 4;
@@ -84,7 +84,13 @@ svg {
 }
 
 .nav-item:hover {
-    background-color: #1499ff;
+    /* background-color: #ffcc14; */
+    border-left: 8px solid var(--secondary);
+    cursor: pointer;
+}
+
+.title:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -114,7 +120,7 @@ header{
     border-radius: 20px;
     justify-self: start;
     padding: 10px 20px;
-    background-color: var(--my-grey);
+    background-color: var(--grey);
     width: min(100%, 600px);
 }
 
@@ -155,7 +161,7 @@ header{
     width: 110px;
     border-radius: 30px;
     cursor: pointer;
-    background-color: var(--my-blue);
+    background-color: var(--secondary);
     color: white;
     font-size: 0.9rem;
     justify-self: start;
@@ -165,12 +171,17 @@ header{
     box-shadow: 1px 1px 5px lightslategray;
 }
 
+header img:hover, header .user-name:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 
 
 
 main {
-    background-color: var(--my-grey);
+    background-color: var(--grey);
     display: grid;
     grid-template-columns: 1fr 300px;
 }
@@ -199,7 +210,7 @@ main .projects .projects-container {
 
 main .projects .project-card {
     background-color: white;
-    border-left: 10px solid var(--my-yellow);
+    border-left: 10px solid var(--secondary);
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr repeat(3, 50px);
@@ -219,7 +230,7 @@ main .project-card-title {
 
 main .project-card-text {
     grid-column: 1 / 5;
-    color: var(--my-text-grey);
+    color: var(--text-grey);
 }
 
 main .project-card-img {
@@ -278,7 +289,7 @@ main .announcements-card-title {}
 
 main .announcements-card-text {
     font-size: 0.8rem;
-    color: var(--my-text-grey);
+    color: var(--text-grey);
 }
 
 
@@ -311,11 +322,16 @@ main .trending-card-username {
 }
 
 main .trending-card-text {
-    color: var(--my-text-grey);
+    color: var(--text-grey);
     font-size: 0.9rem;
 }
 
-.trending-card:hover, .announcements-card:hover {
+.trending-card:hover, .announcements-card:hover, .main-title:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.project-card img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
