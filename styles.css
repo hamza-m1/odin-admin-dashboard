@@ -160,7 +160,7 @@ header {
 header img:hover, header .user-name:hover {
     transform: scale(1.1);
     cursor: pointer;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
 }
 
 
@@ -208,7 +208,7 @@ main .projects .project-card {
 main .project-card:hover {
     transform: scale(1.05);
     cursor: pointer;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
 }
 
 main .project-card-title {
@@ -314,17 +314,17 @@ main .trending-card-text {
 .trending-card:hover, .announcements-card:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
 }
 
 .project-card img:hover {
     cursor: pointer;
     transform: scale(1.4);
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
 }
 
 main .main-title:hover {
     cursor: pointer;
     transform: scale(1.1);
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
 }
