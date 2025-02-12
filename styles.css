@@ -149,5 +149,64 @@ header{
 
 
 main{
-    background-color: azure;
+    background-color: rgb(232, 232, 232);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+main .projects {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.projects .main-title{
+    align-self: end;
+    justify-self: start;
+}
+
+main .projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+
+main .projects .project-card {
+    background-color: white;
+    border-left: 10px solid rgb(255, 204, 0);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 50px);
+    grid-template-rows: 20px 1fr 10px 30px;
+    /* height: 300px; */
+}
+
+.project-card-title {
+    grid-column: 1 / 5;
+}
+
+.project-card-text {
+    grid-column: 1 / 5;
+}
+
+main .project-card-img {
+    height: 30px;
+    justify-self: end;
+}
+
+main .project-card .favourite-img {
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+
+main .project-card .viewed-img{
+    grid-column: 3 / 4;
+    grid-row: 4;
+}
+
+main .project-card .share-img{
+    grid-column: 4 / 5;
+    grid-row: 4;
 }
